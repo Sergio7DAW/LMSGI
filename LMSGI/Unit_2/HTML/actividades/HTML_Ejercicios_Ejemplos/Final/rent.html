@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blitz - Alquiler de Vehículos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-center">
+                <a href="home.html"><img src="images/lightning.svg" alt="Home" class="icon"></a>
+                <a href="rent.html"><img src="images/car.svg" alt="Rent" class="icon"></a>
+            </div>
+            <a href="about.html">Sobre Nosotros</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Formulario de Alquiler de Vehículo</h2>
+        <form action="selection.html" method="get" id="rentForm">
+
+            <label for="motivo">¿Por qué quiere alquilar un coche?</label>
+            <select id="motivo" name="motivo" required>
+                <option value="negocios">Negocios</option>
+                <option value="ocio">Ocio</option>
+                <option value="otros">Otros</option>
+            </select>
+            <br>
+            <br>
+
+            <label for="lugar">¿Dónde quiere alquilar?</label>
+            <input type="text" id="lugar" name="lugar" maxlength="50" placeholder="Escriba el lugar de alquiler"
+                required>
+            <br>
+            <br>
+
+            <label for="destino">¿Cuál es su destino?</label>
+            <input type="text" id="destino" name="destino" maxlength="50" placeholder="Escriba su destino" required>
+            <br>
+            <br>
+
+            <label for="dias">¿Cuántos días desea alquilar?</label>
+            <input type="number" id="dias" name="dias" min="1" placeholder="Número de días" required>
+            <br>
+            <br>
+
+            <label>
+                <input type="checkbox" id="terminos" name="terminos" required>
+                Acepto los términos y condiciones
+            </label>
+            <br>
+            <br>
+
+            <div class="buttons">
+                <input type="reset" value="Borrar">
+                <input type="submit" value="Continuar">
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Blitz by Sergio. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>
